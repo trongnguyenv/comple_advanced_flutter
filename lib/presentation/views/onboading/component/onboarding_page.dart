@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../../../domain/onboarding_model.dart';
+import '../../../../domain/onboading/onboarding_model.dart';
 import '../../../resources/sizes.dart';
 
 class OnBoardingPage extends StatelessWidget {
@@ -17,19 +17,15 @@ class OnBoardingPage extends StatelessWidget {
         SizedBox(height: AppSize.s40),
         Padding(
           padding: const EdgeInsets.all(AppPadding.p8),
-          child: Text(
-            _sliderObject.title,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.headline1,
-          ),
+          child: Text(_sliderObject.title,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.headline1),
         ),
         Padding(
           padding: const EdgeInsets.all(AppPadding.p8),
-          child: Text(
-            _sliderObject.subTitle,
-            textAlign: TextAlign.center,
-            style: Theme.of(context).textTheme.subtitle1,
-          ),
+          child: Text(_sliderObject.subTitle,
+              textAlign: TextAlign.center,
+              style: Theme.of(context).textTheme.subtitle1),
         ),
         SizedBox(height: AppSize.s60),
         SvgPicture.asset(_sliderObject.image),

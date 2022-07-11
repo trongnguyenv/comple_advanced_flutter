@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import '../../../../domain/onboarding_model.dart';
+import '../../../../domain/onboading/onboarding_model.dart';
 import '../../../base/base_view_model.dart';
 import '../../../resources/assets.dart';
 import '../../../resources/strings.dart';

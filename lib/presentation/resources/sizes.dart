@@ -34,6 +34,5 @@ class AppSize {
 }
 
 class DurationConstant {
-  static const int d150 = 150;
   static const int d300 = 300;
 }

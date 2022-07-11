@@ -7,8 +7,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import '../../resources/routes.dart';
-import 'component/onboarding_page.dart';
+import '../../../resources/routes.dart';
+import '../component/onboarding_page.dart';
 
 class OnBoardingView extends StatefulWidget {
   const OnBoardingView({Key? key}) : super(key: key);
@@ -42,9 +42,9 @@ class _OnBoardingViewState extends State<OnBoardingView> {
   }
 
   Widget _getContentWidget(SlideViewObject? slideViewObject) {
-    if (slideViewObject == null)
+    if (slideViewObject == null) {
       return Container();
-    else
+    } else {
       return Scaffold(
         backgroundColor: AppColors.white,
         appBar: AppBar(
@@ -84,6 +84,7 @@ class _OnBoardingViewState extends State<OnBoardingView> {
           ),
         ),
       );
+    }
   }
 
   Widget _getProperCircle(int index, int _currentIndex) {
